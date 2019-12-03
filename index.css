@@ -1,0 +1,67 @@
+h1{
+    
+    background: green;
+}
+
+
+.contenedor {
+    perspective: 800px;
+    perspective-origin: 50% 100px;
+   
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-size: 40px;
+  font-weight: bold;
+  color: rgb(236, 223, 223);
+  text-align: center;
+  
+}
+
+.cubo {
+    width: 200px;
+    position: relative;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+}
+.cubo div {
+    position: absolute;
+    opacity: 0.90;
+    width: 198px;
+    height: 198px;
+    border: 2px solid;
+}
+.atras {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: rgb(121, 21, 21);
+}
+.cara {
+    transform: translateZ(100px);
+    background-color: rgba(214, 112, 44, 0.726);
+}
+
+.izquierda {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: rgb(39, 102, 110);
+}
+.derecha {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: rgb(18, 75, 18);
+}
+
+.tapa {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgb(41, 32, 32);
+}
+.piso {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: rgb(150, 48, 136);
+}
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
