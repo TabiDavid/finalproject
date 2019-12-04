@@ -1,16 +1,26 @@
+*{
+    text-align: center;
+}
 h1{
     
     background: green;
+    border: none;
+    outline: none;
+    border-radius: 25px 25px 25px 25px;
+    text-align: center;
+}
+div{
+    margin: auto;
 }
 
-
 .contenedor {
+    
     perspective: 800px;
     perspective-origin: 50% 100px;
-   
+    
     position: absolute;
     top: 150px;
-    left: 150px;
+    left: 400px;
     font-size: 40px;
   font-weight: bold;
   color: rgb(236, 223, 223);
@@ -19,12 +29,14 @@ h1{
 }
 
 .cubo {
+    
     width: 200px;
     position: relative;
     animation: rotar 10s infinite linear;
     transform-style: preserve-3d;
 }
 .cubo div {
+    margin: auto;
     position: absolute;
     opacity: 0.90;
     width: 198px;
@@ -70,7 +82,7 @@ h1{
 body{
     margin: 0;
     margin: 0;
-    background: black;
+    background: rgb(223, 216, 216);
     background-size: cover;
     font-family: sans-serif;
 }
